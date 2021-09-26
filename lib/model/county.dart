@@ -1,4 +1,4 @@
-import 'package:get_me_car/model/city.dart';
+import 'package:getmecar/model/city.dart';
 
 class Country {
   final String name;

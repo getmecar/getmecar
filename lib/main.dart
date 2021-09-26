@@ -3,13 +3,13 @@ import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:get_me_car/components/my_progress_indicator.dart';
-import 'package:get_me_car/pages/home_page/home_page.dart';
-import 'package:get_me_car/providers/search_provider.dart';
-import 'package:get_me_car/providers/webview_provider.dart';
-import 'package:get_me_car/services/fcm_service.dart';
-import 'package:get_me_car/services/local_notifications_service.dart';
-import 'package:get_me_car/theme/light_theme.dart';
+import 'package:getmecar/components/my_progress_indicator.dart';
+import 'package:getmecar/pages/home_page/home_page.dart';
+import 'package:getmecar/providers/search_provider.dart';
+import 'package:getmecar/providers/webview_provider.dart';
+import 'package:getmecar/services/fcm_service.dart';
+import 'package:getmecar/services/local_notifications_service.dart';
+import 'package:getmecar/theme/light_theme.dart';
 import 'package:provider/provider.dart';
 import 'package:secondsplash/secondsplash.dart';
 
@@ -60,7 +60,7 @@ class _MyAppState extends State<MyApp> {
   Future<bool> checkConnection() async {
     bool? connected;
     try {
-      final result = await InternetAddress.lookup('example.com');
+      final result = await InternetAddress.lookup('getmecar.com');
       if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
         print('connected');
         connected = true;

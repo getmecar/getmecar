@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:get_me_car/model/city.dart';
-import 'package:get_me_car/model/county.dart';
-import 'package:get_me_car/model/transport.dart';
+import 'package:getmecar/model/city.dart';
+import 'package:getmecar/model/county.dart';
+import 'package:getmecar/model/transport.dart';
 import 'package:http/http.dart' as http;
 
 abstract class GetMeCarService {

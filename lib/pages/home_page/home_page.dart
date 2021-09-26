@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:get_me_car/components/outlined_button.dart';
-import 'package:get_me_car/pages/home_page/technique_search.dart';
-import 'package:get_me_car/pages/webview_page.dart';
-import 'package:get_me_car/providers/webview_provider.dart';
+import 'package:getmecar/components/outlined_button.dart';
+import 'package:getmecar/pages/home_page/technique_search.dart';
+import 'package:getmecar/pages/webview_page.dart';
+import 'package:getmecar/providers/webview_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 

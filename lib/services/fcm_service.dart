@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:get_me_car/services/local_notifications_service.dart';
+import 'package:getmecar/services/local_notifications_service.dart';
 
 abstract class FCMService {
   static Future<void> onBackgroundMessageFunction(RemoteMessage message) async {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get_me_car/components/my_progress_indicator.dart';
+import 'package:getmecar/components/my_progress_indicator.dart';
 
 class LoadingCatalogPage extends StatelessWidget {
   const LoadingCatalogPage({Key? key}) : super(key: key);

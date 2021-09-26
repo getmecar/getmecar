@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get_me_car/components/big_button.dart';
-import 'package:get_me_car/pages/home_page/home_page.dart';
+import 'package:getmecar/components/big_button.dart';
+import 'package:getmecar/pages/home_page/home_page.dart';
 import 'package:local_auth/local_auth.dart';
 
 class LocalAuthPage extends StatefulWidget {

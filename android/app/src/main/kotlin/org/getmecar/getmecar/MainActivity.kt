@@ -1,4 +1,4 @@
-package com.example.get_me_car
+package org.getmecar.getmecar
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.embedding.engine.FlutterEngine

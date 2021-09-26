@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:get_me_car/model/city.dart';
-import 'package:get_me_car/model/county.dart';
-import 'package:get_me_car/model/transport.dart';
-import 'package:get_me_car/services/get_me_car_service.dart';
+import 'package:getmecar/model/city.dart';
+import 'package:getmecar/model/county.dart';
+import 'package:getmecar/model/transport.dart';
+import 'package:getmecar/services/get_me_car_service.dart';
 
 class SearchProvider with ChangeNotifier {
   List<Country>? _countries;

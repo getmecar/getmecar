@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get_me_car/services/get_me_car_service.dart';
+import 'package:getmecar/services/get_me_car_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class WebviewProvider with ChangeNotifier {
@@ -101,25 +101,34 @@ class WebviewProvider with ChangeNotifier {
 
   void openLocality(
       {required String? countryId, String? cityId, String? transportId, DateTime? timeStart, DateTime? timeEnd}) {
+    /// arrive date
     String arrive = '';
     if (timeStart != null) {
       arrive = 'arrive=${timeStart.day}-${timeStart.month}-${timeStart.year}';
     }
+
+    /// depart date
     String depart = '';
     if (timeEnd != null) {
       depart = 'depart=${timeEnd.day}-${timeEnd.month}-${timeEnd.year}';
     }
+
+    ///transport type
     String transport = '';
     if (transportId != null) {
       transport = 'tech_cat=$transportId';
     }
+
+    /// country & city
     String? localityId = cityId;
+    String city = 'city=$cityId';
     if (cityId == null) {
+      city = '';
       localityId = countryId;
     }
 
-    _currentUrl =
-        'https://getmecar.ru/city/$localityId/?list_country=$countryId&city=$cityId&$transport&$arrive&$depart';
+    _currentUrl = 'https://getmecar.ru/city/$localityId/?list_country=$countryId&$city&$transport&$arrive&$depart';
+    print('NEW URL: $_currentUrl');
     _isCatalog = true;
     notifyListeners();
   }

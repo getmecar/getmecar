@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
-import 'package:get_me_car/components/my_progress_indicator.dart';
-import 'package:get_me_car/providers/webview_provider.dart';
-import 'package:get_me_car/utils/constants.dart';
+import 'package:getmecar/components/my_progress_indicator.dart';
+import 'package:getmecar/providers/webview_provider.dart';
+import 'package:getmecar/utils/constants.dart';
 import 'package:in_app_review/in_app_review.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart' as launcher;

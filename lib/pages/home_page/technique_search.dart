@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:get_me_car/components/big_button.dart';
-import 'package:get_me_car/components/drop_down_text_field.dart';
-import 'package:get_me_car/pages/webview_page.dart';
-import 'package:get_me_car/providers/search_provider.dart';
-import 'package:get_me_car/providers/webview_provider.dart';
+import 'package:getmecar/components/big_button.dart';
+import 'package:getmecar/components/drop_down_text_field.dart';
+import 'package:getmecar/pages/webview_page.dart';
+import 'package:getmecar/providers/search_provider.dart';
+import 'package:getmecar/providers/webview_provider.dart';
 import 'package:provider/provider.dart';
 
 class TechniqueSearch extends StatefulWidget {
